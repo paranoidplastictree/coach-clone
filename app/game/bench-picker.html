@@ -1,0 +1,26 @@
+<h2>Pick a Bench Warmer</h2>
+<div class="manage-roster">
+  <div class="no-players" ng-hide="players.length > 0">
+    <p>
+      There are no players to display
+    </p>
+  </div>
+  <div class="players" ng-show="players.length > 0">
+    <ul class="player-list">
+      <li ng-repeat="player in players | filter: benchedPlayers | orderBy: 'BenchTime'">
+        <div class="row">
+          <div class="col-xs-6">
+              <span ng-click="setNextPositions(player.Id)">{{player.Name}}</span>
+          </div>
+          <div class="col-xs-6">
+              <div class="row">
+                  <div class="col-xs-12">
+                      Bench Time: {{player.BenchTime}}
+                  </div>
+              </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

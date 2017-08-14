@@ -1,0 +1,22 @@
+<div class="edit-player">
+  <form>
+    <div class="top-nav-buttons">
+      <div class="row">
+        <div class="col-xs-2 col-xs-push-1">
+          <a href="#/admin/roster">
+            <img src="/app/images/back-arrow.png" alt="Back" />
+          </a>
+        </div>
+        <div class="col-xs-2 col-xs-push-8">
+          <a href="#" ng-click="save()">
+            <img src="/app/images/add.png" alt="Add Player" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="player-name-tb">Player Name</label>
+      <input type="text" ng-model="player.Name" class="form-control" id="player-name-tb" placeholder="Enter a name">
+    </div>
+  </form>
+</div>

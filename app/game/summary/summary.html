@@ -1,0 +1,41 @@
+<h2>Summary</h2>
+<div class="manage-roster">
+  <div class="no-players" ng-hide="swaps.length > 0">
+    <p>
+      There are no players to display
+    </p>
+  </div>
+  <div class="players" ng-show="swaps.length > 0">
+    <ul class="player-list">
+      <li ng-repeat="player in swaps">
+        <div class="row">
+            <div class="col-xs-6">
+                {{player.Name}}
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-12">
+                        Current Position: {{player.CurrentPosition}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        Next Position: {{player.NextPosition}}
+                    </div>
+                </div>
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+      <div class="col-xs-12">
+          <button ng-click="substitute()" class="btn btn-success btn-block">Substitute</button>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12">
+          <button ng-click="cancel()" class="btn btn-danger btn-block">Cancel</button>
+      </div>
+  </div>
+</div>

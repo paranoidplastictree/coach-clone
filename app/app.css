@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'sf_collegiateitalic';
+    src: url('fonts/sf_collegiate_italic-webfont.eot');
+    src: url('fonts/sf_collegiate_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sf_collegiate_italic-webfont.woff2') format('woff2'),
+         url('fonts/sf_collegiate_italic-webfont.woff') format('woff'),
+         url('fonts/sf_collegiate_italic-webfont.ttf') format('truetype'),
+         url('fonts/sf_collegiate_italic-webfont.svg#fonts/sf_collegiateitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sf_collegiate_solidBdIt';
+    src: url('fonts/sf_collegiate_solid_bold_italic-webfont.eot');
+    src: url('fonts/sf_collegiate_solid_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sf_collegiate_solid_bold_italic-webfont.woff2') format('woff2'),
+         url('fonts/sf_collegiate_solid_bold_italic-webfont.woff') format('woff'),
+         url('fonts/sf_collegiate_solid_bold_italic-webfont.ttf') format('truetype'),
+         url('fonts/sf_collegiate_solid_bold_italic-webfont.svg#fonts/sf_collegiate_solidBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sf_collegiate_solidregular';
+    src: url('fonts/sf_collegiate_solid-webfont.eot');
+    src: url('fonts/sf_collegiate_solid-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sf_collegiate_solid-webfont.woff2') format('woff2'),
+         url('fonts/sf_collegiate_solid-webfont.woff') format('woff'),
+         url('fonts/sf_collegiate_solid-webfont.ttf') format('truetype'),
+         url('fonts/sf_collegiate_solid-webfont.svg#fonts/sf_collegiate_solidregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sf_collegiateregular';
+    src: url('fonts/sf_collegiate-webfont.eot');
+    src: url('fonts/sf_collegiate-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sf_collegiate-webfont.woff2') format('woff2'),
+         url('fonts/sf_collegiate-webfont.woff') format('woff'),
+         url('fonts/sf_collegiate-webfont.ttf') format('truetype'),
+         url('fonts/sf_collegiate-webfont.svg#sf_collegiateregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* app css stylesheet */
+h1, h2, h3, h4, ul, ol, div, section {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  padding: 10pt;
+  font-family: 'sf_collegiate_solidregular', Arial, sans-serif;
+  font-size: 34pt;
+}
+
+header {
+  background-color: #2C711D;
+}
+
+footer {
+  margin-top: 20pt;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 { margin-top: 20pt; margin-bottom: 0; padding: 8pt; text-align: center; background-color: #dfdfdf; }
+
+ul.player-list {
+  border: 1px solid #dfdfdf;
+  border-bottom: none;
+  box-shadow: 0px 4px 16px #dfdfdf;
+}
+
+ul.player-list li {
+  padding: 0pt;
+  font-size: 20pt;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10pt;
+}
+
+ul.player-list li.active {
+  background-color: green;
+}
+
+ul.player-list li a {
+  margin-left: 8pt;
+}
+
+.admin-options ul li {
+  margin-top: 20pt;
+}
+
+.admin-options ul li a {
+  padding: 8pt;
+}
+
+.buttons {
+  margin-top: 10pt;
+}
+
+.buttons a {
+  font-size: 18pt;
+  padding: 8pt;
+}
+
+.top-nav-buttons {
+  padding: 8pt;
+  margin-top: -52pt;
+}
+
+.player-position {
+  font-size: 14pt;
+  margin-left: 10pt;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}

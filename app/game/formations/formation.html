@@ -1,0 +1,15 @@
+<h2>Pick a Formation</h2>
+
+<ul>
+  <li ng-repeat="formationList in formationsList">
+    <span>{{formationList.id}}</span>
+    <ul>
+      <li class="formation" ng-repeat="formation in formationList.formations track by $index" ng-click="selectFormation">
+          <span>Forwards: {{formation.F}}</span>
+          <span>Midfield: : {{formation.M}}</span>
+          <span>Defense: {{formation.D}}</span>
+          <span>Keeper: {{formation.K}}</span>
+      </li>
+    </u>
+  </li>
+</ul>

@@ -1,0 +1,17 @@
+<h2>Player Positions</h2>
+
+<ul class="position-list">
+  <li ng-repeat="positions in availablePositions" ng-click="showBenchChooser">
+    <span>{{position.name}}</span>
+  </li>
+</ul>
+
+<div class="modalzzzz">
+  <ul>
+    <li ng-repeat="player in players">
+      <span class="name">{{player.properties.Name}}</span>
+    </li>
+  </ul>
+</div>
+
+<button type="button" ng-click="save()">continue</button>
